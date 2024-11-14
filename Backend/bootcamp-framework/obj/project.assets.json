@@ -56,24 +56,6 @@
       "Microsoft.EntityFrameworkCore.Analyzers/9.0.0": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.InMemory/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.0",
-          "Microsoft.Extensions.Caching.Memory": "9.0.0",
-          "Microsoft.Extensions.Logging": "9.0.0"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -340,21 +322,6 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
-      },
-      "bootcamp-framework/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "AutoMapper": "13.0.1",
-          "Microsoft.EntityFrameworkCore": "9.0.0",
-          "Swashbuckle.AspNetCore": "7.0.0"
-        },
-        "compile": {
-          "bin/placeholder/bootcamp-framework.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/bootcamp-framework.dll": {}
-        }
       }
     }
   },
@@ -417,21 +384,6 @@
         "docs/PACKAGE.md",
         "microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/9.0.0": {
-      "sha512": "Pm4NBnv3aB8O5bBNwWRkL4a/H+3WdgKRKYD93FkR9TrUNb0jfns9JVN5w9WEUsQCm0C69Eg2Y85i8pdmSfaNnQ==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -1086,19 +1038,13 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "bootcamp-framework/1.0.0": {
-      "type": "project",
-      "path": "../bootcamp-framework/bootcamp-framework.csproj",
-      "msbuildProject": "../bootcamp-framework/bootcamp-framework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
-      "Microsoft.EntityFrameworkCore.InMemory >= 9.0.0",
-      "Swashbuckle.AspNetCore >= 7.0.0",
-      "bootcamp-framework >= 1.0.0"
+      "Microsoft.EntityFrameworkCore >= 9.0.0",
+      "Swashbuckle.AspNetCore >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -1107,11 +1053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
-      "projectName": "bootcamp-users-maintenance",
-      "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
+      "projectUniqueName": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj",
+      "projectName": "bootcamp-framework",
+      "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj",
       "packagesPath": "C:\\Users\\Angelito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\obj\\",
+      "outputPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Angelito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1128,11 +1074,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj": {
-              "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1154,7 +1096,7 @@
             "target": "Package",
             "version": "[13.0.1, )"
           },
-          "Microsoft.EntityFrameworkCore.InMemory": {
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.0, )"
           },
@@ -1175,9 +1117,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

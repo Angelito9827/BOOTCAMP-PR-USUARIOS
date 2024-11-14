@@ -4,14 +4,14 @@
     "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj": {
+    "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
-        "projectName": "bootcamp-users-maintenance",
-        "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
+        "projectUniqueName": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj",
+        "projectName": "bootcamp-framework",
+        "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj",
         "packagesPath": "C:\\Users\\Angelito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\obj\\",
+        "outputPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Angelito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,9 +46,96 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
+        "projectName": "bootcamp-users-maintenance",
+        "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
+        "packagesPath": "C:\\Users\\Angelito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Angelito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj": {
+                "projectPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NcjMd6uJHfE=",
+  "dgSpecHash": "31ur/aObiHU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\bootcamp-users-maintenance.csproj",
+  "projectFilePath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-framework\\bootcamp-framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Angelito\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
-    "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\9.0.0\\microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\Angelito\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
