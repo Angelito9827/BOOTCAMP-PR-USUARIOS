@@ -1,3 +1,6 @@
+using bootcamp_users_maintenance.Infraestructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +10,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var conectioString = builder.Configuration.GetConnectionString("DefaultConnection");
+if (builder.Environment.IsDevelopment())
+{
+    builder.Services.AddDbContext<UserListContext>(options =>
+    options.UseSqlServer(conectioString));
+}
+
 var app = builder.Build();
+
+if (builder.Environment.IsDevelopment())
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<UserListContext>();
+    context.Database.EnsureDeleted();
+    context.Database.EnsureCreated();
+    DevelopmentDataLoader dataLoader = new(context);
+    dataLoader.LoadData();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
