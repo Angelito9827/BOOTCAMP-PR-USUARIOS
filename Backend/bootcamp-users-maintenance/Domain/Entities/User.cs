@@ -25,6 +25,5 @@ namespace bootcamp_users_maintenance.Domain.Entities
         public long RoleId { get; set; }
         [Required]
         public Role Role { get; set; }
-        [Timestamp] public byte[] UserTimestamp { get; set; }
     }
 }
