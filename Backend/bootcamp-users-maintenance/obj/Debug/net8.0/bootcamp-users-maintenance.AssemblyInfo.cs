@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bootcamp-users-maintenance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c620a356ce1d04764a04a647010e45c60d4a6fa5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4345971fba044b63791f70e82a8788b7acabbba6")]
 [assembly: System.Reflection.AssemblyProductAttribute("bootcamp-users-maintenance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bootcamp-users-maintenance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
