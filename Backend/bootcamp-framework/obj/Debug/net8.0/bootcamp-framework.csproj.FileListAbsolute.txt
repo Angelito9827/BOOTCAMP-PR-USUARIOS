@@ -1,0 +1,13 @@
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\bin\Debug\net8.0\bootcamp-framework.deps.json
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\bin\Debug\net8.0\bootcamp-framework.dll
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\bin\Debug\net8.0\bootcamp-framework.pdb
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.csproj.AssemblyReference.cache
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.AssemblyInfoInputs.cache
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.AssemblyInfo.cs
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.csproj.CoreCompileInputs.cache
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.sourcelink.json
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.dll
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\refint\bootcamp-framework.dll
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\bootcamp-framework.pdb
+C:\Users\Angelito\source\repos\bootcamp-pr-usuarios\Backend\bootcamp-framework\obj\Debug\net8.0\ref\bootcamp-framework.dll

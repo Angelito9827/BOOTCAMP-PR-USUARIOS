@@ -15,7 +15,7 @@ namespace bootcamp_users_maintenance.Infraestructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
-                .HasOne(i => i.Role+)
+                .HasOne(i => i.Role)
                 .WithMany()
                 .HasForeignKey(i => i.RoleId)
                 .IsRequired();
