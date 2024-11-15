@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace bootcamp_users_maintenance.Domain.Entities
 {
     [Table("roles")]
-    public class Rol
+    public class Role
     {
         public long Id { get; set; }
         [Column(TypeName = "varchar(50)")]

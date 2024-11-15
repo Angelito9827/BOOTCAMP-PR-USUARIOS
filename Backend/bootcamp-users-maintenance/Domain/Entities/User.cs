@@ -22,9 +22,9 @@ namespace bootcamp_users_maintenance.Domain.Entities
         [Required]
         public string Email { get; set; }
         [Required]
-        public long RolId { get; set; }
+        public long RoleId { get; set; }
         [Required]
-        public Rol Rol { get; set; }
+        public Role Role { get; set; }
         [Timestamp] public byte[] UserTimestamp { get; set; }
     }
 }

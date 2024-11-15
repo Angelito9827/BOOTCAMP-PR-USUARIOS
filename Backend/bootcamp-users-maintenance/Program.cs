@@ -14,7 +14,7 @@ var conectioString = builder.Configuration.GetConnectionString("DefaultConnectio
 if (builder.Environment.IsDevelopment())
 {
     builder.Services.AddDbContext<UserListContext>(options =>
-    options.UseInMemoryDatabase(conectioString));
+    options.UseSqlServer(conectioString));
 }
 
 var app = builder.Build();
@@ -24,6 +24,8 @@ if (builder.Environment.IsDevelopment())
     using var scope = app.Services.CreateScope();
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<UserListContext>();
+    context.Database.EnsureDeleted();
+    context.Database.EnsureCreated();
     DevelopmentDataLoader dataLoader = new(context);
     dataLoader.LoadData();
 }

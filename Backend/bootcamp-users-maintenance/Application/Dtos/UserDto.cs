@@ -12,8 +12,8 @@ namespace bootcamp_users_maintenance.Application.Dtos
 
         public string Email { get; set; }
 
-        public long RolId { get; set; }
+        public long RoleId { get; set; }
 
-        public string RolName { get; set; }
+        public string RoleName { get; set; }
     }
 }

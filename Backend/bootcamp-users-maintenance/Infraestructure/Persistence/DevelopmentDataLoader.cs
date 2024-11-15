@@ -27,14 +27,14 @@ namespace bootcamp_users_maintenance.Infraestructure.Persistence
 
         private void LoadRoles()
         {
-            var roles = new Rol[]
+            var roles = new Role[]
             {
-                new Rol{ Name="Administrador"},
-                new Rol{ Name="Contributor"}
+                new Role{ Name="Administrador"},
+                new Role{ Name="Contributor"}
             };
-            foreach (Rol rol in roles)
+            foreach (Role role in roles)
             {
-                userListContext.Roles.Add(rol);
+                userListContext.Roles.Add(role);
             }
         }
 
@@ -42,9 +42,9 @@ namespace bootcamp_users_maintenance.Infraestructure.Persistence
         {
             var users = new User[]
             {
-                new User{ Name="Pablo", LastName="Ramírez", Email="example01@email.com", RolId=1},
-                new User{ Name="Roberto", LastName="González", Email="example02@email.com", RolId=2},
-                new User{ Name="Juan", LastName="Martínez", Email="example03@email.com", RolId=1},
+                new User{ Name="Pablo", LastName="Ramírez", Email="example01@email.com", RoleId=1},
+                new User{ Name="Roberto", LastName="González", Email="example02@email.com", RoleId=2},
+                new User{ Name="Juan", LastName="Martínez", Email="example03@email.com", RoleId=1},
             };
             foreach (User user in users)
             {
