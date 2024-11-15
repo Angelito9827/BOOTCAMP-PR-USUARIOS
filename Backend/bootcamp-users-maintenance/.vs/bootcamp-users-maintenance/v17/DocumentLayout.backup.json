@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\application\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:application\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\application\\mapping\\rolemapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:application\\mapping\\rolemapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\application\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:application\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\infraestructure\\persistence\\userlistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:infraestructure\\persistence\\userlistcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|c:\\users\\angelito\\source\\repos\\bootcamp-pr-usuarios\\backend\\bootcamp-users-maintenance\\infraestructure\\rest\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2B27BA1-064B-4200-A7FB-7A008F0084D6}|bootcamp-users-maintenance.csproj|solutionrelative:infraestructure\\rest\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "Domain\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:00:02.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Services\\RoleService.cs",
+              "RelativeToolTip": "Application\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:59:30.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Services\\IRoleService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Services\\IRoleService.cs",
+              "RelativeToolTip": "Application\\Services\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:59:24.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoleMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Mapping\\RoleMapperProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\RoleMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Mapping\\RoleMapperProfile.cs",
+              "RelativeToolTip": "Application\\Mapping\\RoleMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:59:18.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Dtos\\RoleDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\RoleDto.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Application\\Dtos\\RoleDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\RoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:59:11.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:50:58.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserListContext.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Infraestructure\\Persistence\\UserListContext.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Persistence\\UserListContext.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Infraestructure\\Persistence\\UserListContext.cs",
+              "RelativeToolTip": "Infraestructure\\Persistence\\UserListContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:49:40.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Infraestructure\\Rest\\RolesController.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Rest\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Angelito\\source\\repos\\bootcamp-pr-usuarios\\Backend\\bootcamp-users-maintenance\\Infraestructure\\Rest\\RolesController.cs",
+              "RelativeToolTip": "Infraestructure\\Rest\\RolesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:43:02.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
