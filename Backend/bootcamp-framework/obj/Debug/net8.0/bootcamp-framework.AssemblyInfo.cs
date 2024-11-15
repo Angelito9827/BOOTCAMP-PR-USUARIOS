@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bootcamp-framework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba49ef0495039b46f1ee05f52b6c42679f8c9dc8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2021c05a8ff1e086d4a6dc1dc3a45cb613325485")]
 [assembly: System.Reflection.AssemblyProductAttribute("bootcamp-framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bootcamp-framework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
