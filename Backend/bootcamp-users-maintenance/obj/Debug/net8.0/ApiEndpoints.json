@@ -1,5 +1,132 @@
 [
   {
+    "ContainingType": "bootcamp_users_maintenance.Infraestructure.Rest.UsersController",
+    "Method": "Get",
+    "RelativePath": "userlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sort",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "bootcamp_framework.Infraestructure.Rest.PagedResponse\u00601[[bootcamp_users_maintenance.Application.Dtos.UserDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "bootcamp_framework.Infraestructure.Rest.GenericCrudController\u00601[[bootcamp_users_maintenance.Application.Dtos.UserDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Insert",
+    "RelativePath": "userlist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "bootcamp_users_maintenance.Application.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "bootcamp_users_maintenance.Application.Dtos.UserDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "bootcamp_framework.Infraestructure.Rest.GenericCrudController\u00601[[bootcamp_users_maintenance.Application.Dtos.UserDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "userlist",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "bootcamp_users_maintenance.Application.Dtos.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "bootcamp_users_maintenance.Application.Dtos.UserDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "bootcamp_framework.Infraestructure.Rest.GenericCrudController\u00601[[bootcamp_users_maintenance.Application.Dtos.UserDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "userlist/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "bootcamp_users_maintenance.Application.Dtos.UserDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "bootcamp_framework.Infraestructure.Rest.GenericCrudController\u00601[[bootcamp_users_maintenance.Application.Dtos.UserDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "userlist/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "bootcamp_framework.Infraestructure.Rest.GenericCrudController\u00601[[bootcamp_users_maintenance.Application.Dtos.RoleDto, bootcamp-users-maintenance, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Get",
     "RelativePath": "userlist/roles",
