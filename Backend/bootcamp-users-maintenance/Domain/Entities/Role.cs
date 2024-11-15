@@ -12,6 +12,5 @@ namespace bootcamp_users_maintenance.Domain.Entities
         [MaxLength(100)]
         [Required]
         public string Name { get; set; }
-        [Timestamp] public byte[] RolTimestamp { get; set; }
     }
 }
