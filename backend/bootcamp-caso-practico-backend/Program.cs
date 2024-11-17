@@ -1,8 +1,12 @@
+using bootcamp_caso_practico_backend.Application.Mapping;
 using bootcamp_caso_practico_backend.Application.Services;
 using bootcamp_caso_practico_backend.Domain.Persistence;
 using bootcamp_caso_practico_backend.Infraestructure.Persistence;
 using bootcamp_caso_practico_backend.Infrastructure.Persistence;
+using bootcamp_framework.Infraestructure.Specs;
 using bootcamp_users_maintenance.Application.Mapping;
+using bootcamp_users_maintenance.Application.Services;
+using bootcamp_users_maintenance.Infraestructure.Persistence;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +15,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IUserService, UserServices>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddAutoMapper(typeof(RoleMapperProfile));
+builder.Services.AddAutoMapper(typeof(UserMapperProfile));
+builder.Services.AddScoped(typeof(ISpecificationParser<>), typeof(SpecificationParser<>));
 
 builder.Services.AddControllers();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
