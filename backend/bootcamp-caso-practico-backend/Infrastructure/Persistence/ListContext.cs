@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using bootcamp_caso_practico_backend.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace bootcamp_caso_practico_backend.Infrastructure.Persistence
 {
@@ -10,5 +11,6 @@ namespace bootcamp_caso_practico_backend.Infrastructure.Persistence
         {
             base.OnConfiguring(optionsBuilder);
         }
+        public DbSet<Role> Roles { get; set; }
     }
 }

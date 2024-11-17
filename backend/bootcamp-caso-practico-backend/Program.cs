@@ -1,12 +1,20 @@
+using bootcamp_caso_practico_backend.Application.Services;
+using bootcamp_caso_practico_backend.Domain.Persistence;
+using bootcamp_caso_practico_backend.Infraestructure.Persistence;
 using bootcamp_caso_practico_backend.Infrastructure.Persistence;
+using bootcamp_users_maintenance.Application.Mapping;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddAutoMapper(typeof(RoleMapperProfile));
 
 builder.Services.AddControllers();
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

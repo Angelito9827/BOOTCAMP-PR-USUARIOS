@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bootcamp-caso-practico-backend", "bootcamp-caso-practico-backend.csproj", "{EE40B870-CD48-4D65-9B19-5155055242EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bootcamp-framework", "..\bootcamp-framework\bootcamp-framework.csproj", "{5D475CEC-D5B7-4BB0-BA69-90F2220C8EFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EE40B870-CD48-4D65-9B19-5155055242EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE40B870-CD48-4D65-9B19-5155055242EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE40B870-CD48-4D65-9B19-5155055242EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D475CEC-D5B7-4BB0-BA69-90F2220C8EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D475CEC-D5B7-4BB0-BA69-90F2220C8EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D475CEC-D5B7-4BB0-BA69-90F2220C8EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D475CEC-D5B7-4BB0-BA69-90F2220C8EFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
