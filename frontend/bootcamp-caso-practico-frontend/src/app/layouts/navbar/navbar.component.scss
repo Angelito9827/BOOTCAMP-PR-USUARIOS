@@ -1,0 +1,37 @@
+.navbar {
+    background-color: darkcyan;
+    height: 100px;
+  
+    .container-fluid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      .container-left {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+  
+        .logotipo, img {
+          width: 40px;
+          height: auto;
+        }
+
+        .navbar-brand h3 {
+          color: rgb(0, 49, 49);
+          cursor: pointer; 
+        }
+      }
+  
+      .container-right {
+        display: flex;
+        align-items: center; 
+
+        .btn .fa-solid {
+          color: rgb(0, 49, 49);
+        }
+      }
+    }
+  }
+  
+  
