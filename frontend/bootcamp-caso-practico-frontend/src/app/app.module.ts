@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { UserComponent } from './entities/user/service/user/user.component';
 import { UserListComponent } from './entities/user/user-list/user-list.component';
 import { UserFormComponent } from './entities/user/user-form/user-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { UserFormComponent } from './entities/user/user-form/user-form.component
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    UserComponent,
+    UserListComponent,
     UserListComponent,
     UserFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
