@@ -1,1 +1,46 @@
-<p>item-list works!</p>
+<div class="container-fluid">
+    <h1>User List</h1>
+    <form>
+        <div class="form-group" class="filter-name">
+            <label for="name">Nombre</label>
+            <input type="text" [(ngModel)]="nameFilter" name="name">
+        </div>
+        <div class="form-group" class="filter-price">
+            <label for="price">Price</label>
+            <input type="number" [(ngModel)]="priceFilter" name="price">
+        </div>
+        <div class="serch-btn">
+            <button class="btn btn-secondary" (click)="searchByFilter();">Buscar</button>
+        </div>
+        <div class="create-btn">
+            <button class="btn btn-secondary" href="">Crear nuevo usuario</button>
+        </div>
+    </form>
+    <table class="table table-striped table-hover" *ngIf="users.length > 0">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">LASTNAME</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col">ROLE</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let user of users">
+                <th scope="row">{{user.id}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.roleName}}</td>
+                <td id="actions-icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pagination-btn">
+        <button [disabled]="currentPage === 1" class="btn btn-secondary previous-btn" (click)="previousPage()">Previous</button>
+        <span>Página {{currentPage}} de {{totalPages}} - Elementos totales:{{totalCount}}</span>
+        <button [disabled]="currentPage === totalPages" class="btn btn-secondary next-btn" (click)="nextPage()">Next</button>
+    </div>
+</div>

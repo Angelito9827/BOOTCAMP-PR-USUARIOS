@@ -12,6 +12,16 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
 // Add services to the container.
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
@@ -37,6 +47,8 @@ if (builder.Environment.IsDevelopment())
 var app = builder.Build();
 
 ConfigureExceptionHandler(app);
+
+app.UseCors("AllowAll");
 
 if (builder.Environment.IsDevelopment())
 {
