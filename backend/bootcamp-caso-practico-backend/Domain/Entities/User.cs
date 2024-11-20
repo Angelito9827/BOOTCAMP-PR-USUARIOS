@@ -9,18 +9,19 @@ namespace bootcamp_caso_practico_backend.Domain.Entities
         public long Id { get; set; }
         [Column(TypeName = "varchar(50)")]
         [MinLength(3)]
-        [MaxLength(100)]
+        [MaxLength(50)]
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
         [Column(TypeName = "varchar(100)")]
         [MinLength(3)]
         [MaxLength(100)]
         [Required]
-        public string LastName { get; set; }
-        [MaxLength(100)]
+        public required string LastName { get; set; }
+        [MaxLength(50)]
+        [MinLength(5)]
         [EmailAddress]
         [Required]
-        public string Email { get; set; }
+        public required string Email { get; set; }
         [Required]
         public long RoleId { get; set; }
         [Required]
