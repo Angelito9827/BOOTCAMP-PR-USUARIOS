@@ -1,6 +1,7 @@
 ﻿using bootcamp_caso_practico_backend.Application.Dtos;
 using bootcamp_caso_practico_backend.Application.Services;
 using bootcamp_framework.Application;
+using bootcamp_framework.Domain.Persistence;
 using bootcamp_framework.Infraestructure.Rest;
 using Microsoft.AspNetCore.Mvc;
 
@@ -43,6 +44,20 @@ namespace bootcamp_caso_practico_backend.Infraestructure.Rest
             catch (MalformedFilterException)
             {
                 return BadRequest();
+            }
+        }
+
+        [HttpPut]
+        public override ActionResult<UserDto> Update(UserDto userDto)
+        {
+            try
+            {
+                var updatedUser = _userService.Update(userDto);
+                return Ok(updatedUser);
+            }
+            catch (ConcurrencyException ex)
+            {
+                return Conflict(new { message = ex.Message });
             }
         }
     }

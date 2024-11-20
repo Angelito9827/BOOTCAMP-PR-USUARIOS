@@ -25,5 +25,8 @@ namespace bootcamp_caso_practico_backend.Domain.Entities
         public long RoleId { get; set; }
         [Required]
         public Role Role { get; set; }
+
+        [Timestamp]
+        public byte[] RowVersion { get; set; }
     }
 }

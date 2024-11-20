@@ -9,7 +9,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { UserListComponent } from './entities/user/user-list/user-list.component';
 import { UserFormComponent } from './entities/user/user-form/user-form.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

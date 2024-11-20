@@ -19,6 +19,10 @@ namespace bootcamp_caso_practico_backend.Infrastructure.Persistence
                 .HasForeignKey(i => i.RoleId)
                 .IsRequired();
 
+            modelBuilder.Entity<User>()
+            .Property(u => u.RowVersion)
+            .IsRowVersion();
+
         }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
