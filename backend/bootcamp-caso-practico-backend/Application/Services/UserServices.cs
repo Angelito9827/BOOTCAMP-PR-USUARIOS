@@ -28,9 +28,9 @@ namespace bootcamp_users_maintenance.Application.Services
         {
             var user = _userRepository.GetById(userDto.Id);
 
-            if (!user.RowVersion.SequenceEqual(userDto.RowVersion))
+            if (user == null)
             {
-                throw new ConcurrencyException("The user record has been modified by another admin.");
+                throw new ElementNotFoundException();
             }
 
             try

@@ -21,7 +21,8 @@ namespace bootcamp_caso_practico_backend.Infrastructure.Persistence
 
             modelBuilder.Entity<User>()
             .Property(u => u.RowVersion)
-            .IsRowVersion();
+            .IsRowVersion()
+            .IsConcurrencyToken();
 
         }
         public DbSet<User> Users { get; set; }
