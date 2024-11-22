@@ -15,5 +15,7 @@ namespace bootcamp_caso_practico_backend.Application.Dtos
         public long RoleId { get; set; }
 
         public required string RoleName { get; set; }
+
+        public byte[] RowVersion { get; set; }
     }
 }

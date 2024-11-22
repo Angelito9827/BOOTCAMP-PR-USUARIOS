@@ -7,10 +7,16 @@ export interface PagedList<UserDto> {
 }
 
 export interface UserDto {
-    id: number;
+    id: number | undefined;
     name: string;
     lastName: string;
     email: string;
     roleId: number;
     roleName: string;
+    rowVersion: string | null;
+}
+
+export interface RoleDto {
+    id: number;
+    name: string;
 }

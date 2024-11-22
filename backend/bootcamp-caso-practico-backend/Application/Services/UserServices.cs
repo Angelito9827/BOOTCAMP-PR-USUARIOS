@@ -5,6 +5,8 @@ using bootcamp_caso_practico_backend.Domain.Entities;
 using bootcamp_caso_practico_backend.Domain.Persistence;
 using bootcamp_framework.Application;
 using bootcamp_framework.Application.Services;
+using bootcamp_framework.Domain.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace bootcamp_users_maintenance.Application.Services
 {
@@ -20,6 +22,31 @@ namespace bootcamp_users_maintenance.Application.Services
         {
             var users = _userRepository.GetUsersByCriteriaPaged(filter, paginationParameters);
             return users;
+        }
+
+        public override UserDto Update(UserDto userDto)
+        {
+            var user = _userRepository.GetById(userDto.Id);
+
+            if (user == null)
+            {
+                throw new ElementNotFoundException();
+            }
+
+            try
+            {
+                user.Name = userDto.Name;
+                user.LastName = userDto.LastName;
+                user.Email = userDto.Email;
+                user.RoleId = userDto.RoleId;
+
+                _userRepository.Update(user);
+                return _mapper.Map<UserDto>(user);
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                throw new ConcurrencyException("The user record has been modified by another admin.");
+            }
         }
     }
 }

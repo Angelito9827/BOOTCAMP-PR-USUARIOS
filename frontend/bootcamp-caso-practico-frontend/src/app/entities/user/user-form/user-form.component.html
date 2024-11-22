@@ -1,1 +1,71 @@
-<p>item-form works!</p>
+<div class="container-fluid">
+    <h1>{{mode}}</h1>
+    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+      </div>
+    <form *ngIf="user"  [formGroup]="form!"  novalidate autocomplete="off">
+        <div class="form-group" *ngIf="mode === 'UPDATE USER'">
+            <label for="id">Id</label>
+            <input type="number" formControlName="id" class="form-control" id="id">
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="name" required>
+            <div *ngIf="form?.get('name')!.dirty && form?.get('name')!.errors" class="text-danger">
+                <small *ngIf="form?.get('name')!.errors!['required']">This field is required.</small>
+                <small *ngIf="form?.get('name')!.errors!['minlength']">It should be at least 3 characters long.</small>
+                <small *ngIf="form?.get('name')!.errors!['maxlength']">It should be at most 50 characters long.</small>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control" id="lastName" required>
+            <div *ngIf="form?.get('lastName')!.dirty && form?.get('lastName')!.errors" class="text-danger">
+                <small *ngIf="form?.get('lastName')!.errors!['required']">This field is required.</small>
+                <small *ngIf="form?.get('lastName')!.errors!['minlength']">It should be at least 3 characters long.</small>
+                <small *ngIf="form?.get('lastName')!.errors!['maxlength']">It should be at most 100 characters long.</small>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" formControlName="email" class="form-control" id="email" required>
+            <div *ngIf="form?.get('email')!.dirty && form?.get('email')!.errors" class="text-danger">
+                <small *ngIf="form?.get('email')!.errors!['required']">This field is required.</small>
+                <small *ngIf="form?.get('email')!.errors!['email']">Please, insert a valid email.</small>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select class="form-select" formControlName="roleId" id="role" required>
+              <option value="0" disabled selected>Select a role</option>
+              <option *ngFor="let role of roles" [value]="role.id">{{ role.name }}</option>
+            </select>
+          </div>
+        <div class="form-group" *ngIf="mode === 'UPDATE USER'">
+            <label for="rowVersion">Row Version</label>
+            <input type="text" formControlName="rowVersion" class="form-control" id="rowVersion">
+        </div>
+    </form>
+    <div class="buttons-form">
+        <button class="btn btn-secondary save-btn" (click)="saveUser()" [disabled]="form?.invalid">Save</button>
+        <button class="btn btn-secondary cancel-btn" data-bs-toggle="modal" data-bs-target="#cancel-modal">Cancel</button>
+    </div>
+</div>
+
+<div class="modal fade" id="cancel-modal" tabindex="-1" aria-labelledby="cancel-modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cancel-modal">Are you sure?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Are you sure you want to cancel this action? The chages made will be lost.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="goBack()">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
