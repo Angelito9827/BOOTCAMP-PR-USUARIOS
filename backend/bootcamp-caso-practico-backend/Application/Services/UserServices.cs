@@ -33,6 +33,11 @@ namespace bootcamp_users_maintenance.Application.Services
                 throw new ElementNotFoundException();
             }
 
+            if (userDto.RowVersion != user.RowVersion)
+            {
+                throw new ConcurrencyException("The user record has been modified by another admin.");
+            }
+
             try
             {
                 user.Name = userDto.Name;
